@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="jquery.js"></script> -->
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>WiFi Configuration</title>
+</head>
+
+
+<body onload="init()" style="background-color: lightgray;">
+    <div class="row">
+
+        <div class="header" id="myHeader"></div>
+
+        <div id="modal_popup" class="modal" style="max-height: 100%;">
+            <div class="modal-content">
+                <div class="col-sm-12 col-s-12 col-12">
+                    <div class="row" style="text-align: right;">
+                        <div class="col-sm-11 col-s-11 col-11">
+                            <!-- <p id="wifi_detail"></p> -->
+                        </div>
+                        <div class="col-sm-1 col-s-1 col-1">
+                            <span class="close" onclick="CloseModal()">&times;</span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <p>กรุณาใส่ password เพื่อเชื่อมต่อ Wi-Fi</p>
+                        <p>WiFi Name</p>
+                        <input id="serialNumber" class="input-container">
+
+                        <p style="margin-top: 80px;">Password:</p>
+                        <input id="password" class="input-container">
+                    </div>
+
+                    <div class="row" style="text-align: center; padding-top: 10px;">
+
+                        <button class="button-green" onclick="confirmWifiPass()">Confirm</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal_wifi_res" class="modal" style="max-height: 100%;">
+            <div class="modal-content">
+                <div class="col-sm-1 col-s-1 col-1">
+                    <span class="close" onclick="CloseModal()">&times;</span>
+                </div>
+                <p id="wifi_res_msg">เชื่อมต่อ Wi-Fi สำเร็จ</p>
+            </div>
+        </div>
+
+
+        <button class="button-green" style="width: 100%; margin-top: 30px;" onclick="retrieveWifi()">Scan
+            WiFi</button>
+
+
+
+        <p id="wifi_option" style="padding-top: 10px;">Choose Wi-Fi</p>
+
+
+        <!------- lockicon -->
+        <!-- <div class="lock"></div> -->
+        <!-- <diV style="width: 3px; height: 3px;">
+            <div class="waveStrength-4">
+                <div class="wv4 wave">
+                    <div class="wv3 wave">
+                        <div class="wv2 wave">
+                            <div class="wv1 wave" style="border-top-color: lightgrey;">
+                                <div class="wave" style="	border: 8px solid transparent;
+                                border-top-color: lightgrey;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </diV> -->
+
+        <div class="tabcontent">
+
+            <div class="timer-area">
+                <div id="time_0"></div>
+                <div id="time_1"></div>
+                <div id="time_2"></div>
+                <div id="time_3"></div>
+                <div id="time_4"></div>
+                <div id="time_5"></div>
+                <div id="time_6"></div>
+                <div id="time_7"></div>
+                <div id="time_8"></div>
+                <div id="time_9"></div>
+                <div id="time_10"></div>
+                <div id="time_11"></div>
+                <div id="time_12"></div>
+                <div id="time_13"></div>
+                <div id="time_14"></div>
+                <div id="time_15"></div>
+                <div id="time_16"></div>
+                <div id="time_17"></div>
+                <div id="time_18"></div>
+                <div id="time_19"></div>
+                <div id="time_20"></div>
+                <div id="time_21"></div>
+                <div id="time_22"></div>
+                <div id="time_23"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="footer"></div>
+
+
+    </div>
+
+</body>
+
+</html>
